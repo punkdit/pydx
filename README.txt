@@ -6,6 +6,8 @@ by Simon Burton.
 
 https://arrowtheory.com/SimonBurtonThesis.pdf
 
+This was written for python2.4 and still needs to
+be ported to python3 .
 
 Pre-requisites
 ==============
