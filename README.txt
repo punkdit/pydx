@@ -1,11 +1,22 @@
 
+
+This is the code developed for the 2007 thesis
+"Numerical Experimentation in Differential Geometry"
+by Simon Burton.
+
+https://arrowtheory.com/SimonBurtonThesis.pdf
+
+
 Pre-requisites
 ==============
+
+...
 
 Installation
 ============
 
-This package is meant to be used in-place, so either
+...
+
 
 What's here
 ===========
