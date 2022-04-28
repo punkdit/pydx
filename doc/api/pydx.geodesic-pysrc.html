@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pydx.geodesic</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >pydx</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pydx ::
+        Module&nbsp;geodesic
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript: void(0);" class="privatelink"
+    onclick="toggle_private();">hide private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pydx.geodesic-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="pydx.geodesic-module.html">Module pydx.geodesic</a></h1>
+<pre class="py-src">
+<span class="py-lineno"> 1</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">random</span> <span class="py-keyword">import</span> <span class="py-name">random</span> </span>
+<span class="py-lineno"> 2</span>  <span class="py-line"> </span>
+<span class="py-lineno"> 3</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-0" class="py-name"><a title="pydx.mjet" class="py-name" href="#" onclick="doclink('link-0', 'mjet', 'Module pydx.mjet=pydx.mjet-module.html'); return false;">mjet</a></span></span> <span class="py-keyword">import</span> <span id="link-1" class="py-name"><a title="pydx.mjet.MJet" class="py-name" href="#" onclick="doclink('link-1', 'MJet', 'Class pydx.mjet.MJet=pydx.mjet.MJet-class.html'); return false;">MJet</a></span></span><span class="py-op">,</span> <span id="link-2" class="py-name"><a title="pydx.mjet.Jet" class="py-name" href="#" onclick="doclink('link-2', 'Jet', 'Class pydx.mjet.Jet=pydx.mjet.Jet-class.html'); return false;">Jet</a></span></span> </span>
+<span class="py-lineno"> 4</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-3" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-3', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span> <span class="py-keyword">import</span> <span id="link-4" class="py-name"><a title="pydx.scalar.Scalar
+pydx.tensor.Scalar" class="py-name" href="#" onclick="doclink('link-4', 'Scalar', 'Class pydx.scalar.Scalar=pydx.scalar.Scalar-class.html,Function pydx.tensor.Scalar()=pydx.tensor-module.html#Scalar'); return false;">Scalar</a></span></span><span class="py-op">,</span> <span id="link-5" class="py-name"><a title="pydx.scalar.set_symbolic_scalar" class="py-name" href="#" onclick="doclink('link-5', 'set_symbolic_scalar', 'Function pydx.scalar.set_symbolic_scalar()=pydx.scalar-module.html#set_symbolic_scalar'); return false;">set_symbolic_scalar</a></span></span><span class="py-op">,</span> <span id="link-6" class="py-name"><a title="pydx.scalar.set_interval_scalar" class="py-name" href="#" onclick="doclink('link-6', 'set_interval_scalar', 'Function pydx.scalar.set_interval_scalar()=pydx.scalar-module.html#set_interval_scalar'); return false;">set_interval_scalar</a></span></span><span class="py-op">,</span> <span id="link-7" class="py-name"><a title="pydx.scalar.restore_scalar
+pydx.scalar.symbolic.Float.restore_scalar" class="py-name" href="#" onclick="doclink('link-7', 'restore_scalar', 'Function pydx.scalar.restore_scalar()=pydx.scalar-module.html#restore_scalar,Class Method pydx.scalar.symbolic.Float.restore_scalar()=pydx.scalar.symbolic.Float-class.html#restore_scalar'); return false;">restore_scalar</a></span></span> </span>
+<span class="py-lineno"> 5</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-8" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-8', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span><span class="py-op">.</span><span id="link-9" class="py-name"><a title="pydx.scalar.mpfi" class="py-name" href="#" onclick="doclink('link-9', 'mpfi', 'Module pydx.scalar.mpfi=pydx.scalar.mpfi-module.html'); return false;">mpfi</a></span></span> <span class="py-keyword">import</span> <span id="link-10" class="py-name"><a title="pydx.scalar.optimize.Interval" class="py-name" href="#" onclick="doclink('link-10', 'Interval', 'Class pydx.scalar.optimize.Interval=pydx.scalar.optimize.Interval-class.html'); return false;">Interval</a></span></span> </span>
+<span class="py-lineno"> 6</span>  <span class="py-line"> </span>
+<span class="py-lineno"> 7</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-11" class="py-name"><a title="pydx.tensor" class="py-name" href="#" onclick="doclink('link-11', 'tensor', 'Module pydx.tensor=pydx.tensor-module.html'); return false;">tensor</a></span></span> <span class="py-keyword">import</span> <span id="link-12" class="py-name"><a title="pydx.tensor.Tensor" class="py-name" href="#" onclick="doclink('link-12', 'Tensor', 'Class pydx.tensor.Tensor=pydx.tensor.Tensor-class.html'); return false;">Tensor</a></span></span> </span>
+<span class="py-lineno"> 8</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-13" class="py-name"><a title="pydx.field" class="py-name" href="#" onclick="doclink('link-13', 'field', 'Module pydx.field=pydx.field-module.html'); return false;">field</a></span></span> <span class="py-keyword">import</span> <span id="link-14" class="py-name"><a title="pydx.field.TensorField" class="py-name" href="#" onclick="doclink('link-14', 'TensorField', 'Class pydx.field.TensorField=pydx.field.TensorField-class.html'); return false;">TensorField</a></span></span><span class="py-op">,</span> <span id="link-15" class="py-name"><a title="pydx.field.ConcreteTensorField" class="py-name" href="#" onclick="doclink('link-15', 'ConcreteTensorField', 'Class pydx.field.ConcreteTensorField=pydx.field.ConcreteTensorField-class.html'); return false;">ConcreteTensorField</a></span></span> </span>
+<span class="py-lineno"> 9</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span class="py-name">manifold</span> <span class="py-keyword">import</span> <span class="py-name">RManifold</span> </span>
+<span class="py-lineno">10</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-16" class="py-name"><a title="pydx.field.TensorField.transform
+pydx.tensor.Tensor.transform
+pydx.transform" class="py-name" href="#" onclick="doclink('link-16', 'transform', 'Method pydx.field.TensorField.transform()=pydx.field.TensorField-class.html#transform,Method pydx.tensor.Tensor.transform()=pydx.tensor.Tensor-class.html#transform,Module pydx.transform=pydx.transform-module.html'); return false;">transform</a></span></span> <span class="py-keyword">import</span> <span id="link-17" class="py-name"><a title="pydx.transform.MobiusTransform" class="py-name" href="#" onclick="doclink('link-17', 'MobiusTransform', 'Class pydx.transform.MobiusTransform=pydx.transform.MobiusTransform-class.html'); return false;">MobiusTransform</a></span></span> </span>
+<span class="py-lineno">11</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span class="py-name">options</span> <span class="py-keyword">import</span> <span class="py-name">options</span> </span>
+<span class="py-lineno">12</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-18" class="py-name"><a title="pydx.ode" class="py-name" href="#" onclick="doclink('link-18', 'ode', 'Module pydx.ode=pydx.ode-module.html'); return false;">ode</a></span></span> <span class="py-keyword">import</span> <span id="link-19" class="py-name"><a title="pydx.ode.ODE" class="py-name" href="#" onclick="doclink('link-19', 'ODE', 'Class pydx.ode.ODE=pydx.ode.ODE-class.html'); return false;">ODE</a></span></span> </span>
+<span class="py-lineno">13</span>  <span class="py-line"> </span>
+<span class="py-lineno">14</span>  <span class="py-line"> </span>
+<a name="Geodesic"></a><div id="Geodesic-def"><span class="py-lineno">15</span> <a class="py-toggle" href="#" id="Geodesic-toggle" onclick="toggle('Geodesic'); return false;">-</a><span class="py-line"><span class="py-keyword">class</span> <a class="py-def-name" href="pydx.geodesic.Geodesic-class.html">Geodesic</a><span class="py-op">(</span><span class="py-base-class">ODE</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Geodesic-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Geodesic-expanded"><a name="Geodesic.__init__"></a><div id="Geodesic.__init__-def"><span class="py-lineno">16</span> <a class="py-toggle" href="#" id="Geodesic.__init__-toggle" onclick="toggle('Geodesic.__init__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.geodesic.Geodesic-class.html#__init__">__init__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">manifold</span><span class="py-op">,</span> <span class="py-param">x0</span><span class="py-op">,</span> <span class="py-param">y0</span><span class="py-op">,</span> <span class="py-param">paramname</span><span class="py-op">=</span><span class="py-name">None</span><span class="py-op">,</span> <span class="py-param">varnames</span><span class="py-op">=</span><span class="py-name">None</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Geodesic.__init__-collapsed" style="display:none;" pad="++" indent="++++++"></div><div id="Geodesic.__init__-expanded"><span class="py-lineno">17</span>  <span class="py-line">    <span class="py-docstring">"""</span> </span>
+<span class="py-lineno">18</span>  <span class="py-line"><span class="py-docstring">    """</span> </span>
+<span class="py-lineno">19</span>  <span class="py-line">    <span id="link-20" class="py-name"><a title="pydx.ode.ODE" class="py-name" href="#" onclick="doclink('link-20', 'ODE', 'Class pydx.ode.ODE=pydx.ode.ODE-class.html'); return false;">ODE</a></span></span><span class="py-op">.</span><span id="link-21" class="py-name"><a title="pydx.field.AdaptedTensorField.__init__
+pydx.field.AddTensorField.__init__
+pydx.field.CommaTensorField.__init__
+pydx.field.ConcreteTensorField.__init__
+pydx.field.ContractTensorField.__init__
+pydx.field.IdentityTransform.__init__
+pydx.field.MulTensorField.__init__
+pydx.field.NegTensorField.__init__
+pydx.field.ScalarField.__init__
+pydx.field.ScalarMulTensorField.__init__
+pydx.field.SubTensorField.__init__
+pydx.field.TensorField.__init__
+pydx.field.Transform.__init__
+pydx.field.TransformTensorField.__init__
+pydx.field.TransposeTensorField.__init__
+pydx.field.ViewTensorField.__init__
+pydx.geodesic.Geodesic.__init__
+pydx.metric.HyperbolicMetric.Inverse.__init__
+pydx.metric.HyperbolicMetric.__init__
+pydx.metric.KerrMetric.Inverse.__init__
+pydx.metric.KerrMetric.__init__
+pydx.metric.RZCurzonMetric.Inverse.__init__
+pydx.metric.RZCurzonMetric.__init__
+pydx.metric.SpatialCurzonMetric.Inverse.__init__
+pydx.metric.SpatialCurzonMetric.__init__
+pydx.metric.SwartzchildMetric.Inverse.__init__
+pydx.metric.SwartzchildMetric.__init__
+pydx.mjet.ACosJet.__init__
+pydx.mjet.ASinJet.__init__
+pydx.mjet.ATanJet.__init__
+pydx.mjet.AddJet.__init__
+pydx.mjet.CosJet.__init__
+pydx.mjet.Derivation.__init__
+pydx.mjet.DivJet.__init__
+pydx.mjet.IntPowJet.__init__
+pydx.mjet.Jet.__init__
+pydx.mjet.JetOp.__init__
+pydx.mjet.MJet.__init__
+pydx.mjet.MulJet.__init__
+pydx.mjet.NegJet.__init__
+pydx.mjet.PromotedJet.__init__
+pydx.mjet.SinJet.__init__
+pydx.mjet.SliceJet.__init__
+pydx.mjet.Spray.__init__
+pydx.mjet.SprayItem.__init__
+pydx.mjet.SubJet.__init__
+pydx.mjet.UnaryJetOp.__init__
+pydx.ode.Info.__init__
+pydx.ode.ODE.__init__
+pydx.scalar.Scalar.__init__
+pydx.scalar.optimize.Binary.__init__
+pydx.scalar.optimize.Interval.__init__
+pydx.scalar.optimize.Multi.__init__
+pydx.scalar.optimize.Unary.__init__
+pydx.scalar.symbolic.ComputationContext.__init__
+pydx.scalar.symbolic.Float.__init__
+pydx.tensor.Tensor.__init__
+pydx.transform.Complex.__init__
+pydx.transform.ComplexTransform.__init__
+pydx.transform.LinearTransform.__init__
+pydx.transform.MobiusTransform.__init__" class="py-name" href="#" onclick="doclink('link-21', '__init__', 'Method pydx.field.AdaptedTensorField.__init__()=pydx.field.AdaptedTensorField-class.html#__init__,Method pydx.field.AddTensorField.__init__()=pydx.field.AddTensorField-class.html#__init__,Method pydx.field.CommaTensorField.__init__()=pydx.field.CommaTensorField-class.html#__init__,Method pydx.field.ConcreteTensorField.__init__()=pydx.field.ConcreteTensorField-class.html#__init__,Method pydx.field.ContractTensorField.__init__()=pydx.field.ContractTensorField-class.html#__init__,Method pydx.field.IdentityTransform.__init__()=pydx.field.IdentityTransform-class.html#__init__,Method pydx.field.MulTensorField.__init__()=pydx.field.MulTensorField-class.html#__init__,Method pydx.field.NegTensorField.__init__()=pydx.field.NegTensorField-class.html#__init__,Method pydx.field.ScalarField.__init__()=pydx.field.ScalarField-class.html#__init__,Method pydx.field.ScalarMulTensorField.__init__()=pydx.field.ScalarMulTensorField-class.html#__init__,Method pydx.field.SubTensorField.__init__()=pydx.field.SubTensorField-class.html#__init__,Method pydx.field.TensorField.__init__()=pydx.field.TensorField-class.html#__init__,Method pydx.field.Transform.__init__()=pydx.field.Transform-class.html#__init__,Method pydx.field.TransformTensorField.__init__()=pydx.field.TransformTensorField-class.html#__init__,Method pydx.field.TransposeTensorField.__init__()=pydx.field.TransposeTensorField-class.html#__init__,Method pydx.field.ViewTensorField.__init__()=pydx.field.ViewTensorField-class.html#__init__,Method pydx.geodesic.Geodesic.__init__()=pydx.geodesic.Geodesic-class.html#__init__,Method pydx.metric.HyperbolicMetric.Inverse.__init__()=pydx.metric.HyperbolicMetric.Inverse-class.html#__init__,Method pydx.metric.HyperbolicMetric.__init__()=pydx.metric.HyperbolicMetric-class.html#__init__,Method pydx.metric.KerrMetric.Inverse.__init__()=pydx.metric.KerrMetric.Inverse-class.html#__init__,Method pydx.metric.KerrMetric.__init__()=pydx.metric.KerrMetric-class.html#__init__,Method pydx.metric.RZCurzonMetric.Inverse.__init__()=pydx.metric.RZCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.RZCurzonMetric.__init__()=pydx.metric.RZCurzonMetric-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.Inverse.__init__()=pydx.metric.SpatialCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.__init__()=pydx.metric.SpatialCurzonMetric-class.html#__init__,Method pydx.metric.SwartzchildMetric.Inverse.__init__()=pydx.metric.SwartzchildMetric.Inverse-class.html#__init__,Method pydx.metric.SwartzchildMetric.__init__()=pydx.metric.SwartzchildMetric-class.html#__init__,Method pydx.mjet.ACosJet.__init__()=pydx.mjet.ACosJet-class.html#__init__,Method pydx.mjet.ASinJet.__init__()=pydx.mjet.ASinJet-class.html#__init__,Method pydx.mjet.ATanJet.__init__()=pydx.mjet.ATanJet-class.html#__init__,Method pydx.mjet.AddJet.__init__()=pydx.mjet.AddJet-class.html#__init__,Method pydx.mjet.CosJet.__init__()=pydx.mjet.CosJet-class.html#__init__,Method pydx.mjet.Derivation.__init__()=pydx.mjet.Derivation-class.html#__init__,Method pydx.mjet.DivJet.__init__()=pydx.mjet.DivJet-class.html#__init__,Method pydx.mjet.IntPowJet.__init__()=pydx.mjet.IntPowJet-class.html#__init__,Method pydx.mjet.Jet.__init__()=pydx.mjet.Jet-class.html#__init__,Method pydx.mjet.JetOp.__init__()=pydx.mjet.JetOp-class.html#__init__,Method pydx.mjet.MJet.__init__()=pydx.mjet.MJet-class.html#__init__,Method pydx.mjet.MulJet.__init__()=pydx.mjet.MulJet-class.html#__init__,Method pydx.mjet.NegJet.__init__()=pydx.mjet.NegJet-class.html#__init__,Method pydx.mjet.PromotedJet.__init__()=pydx.mjet.PromotedJet-class.html#__init__,Method pydx.mjet.SinJet.__init__()=pydx.mjet.SinJet-class.html#__init__,Method pydx.mjet.SliceJet.__init__()=pydx.mjet.SliceJet-class.html#__init__,Method pydx.mjet.Spray.__init__()=pydx.mjet.Spray-class.html#__init__,Method pydx.mjet.SprayItem.__init__()=pydx.mjet.SprayItem-class.html#__init__,Method pydx.mjet.SubJet.__init__()=pydx.mjet.SubJet-class.html#__init__,Method pydx.mjet.UnaryJetOp.__init__()=pydx.mjet.UnaryJetOp-class.html#__init__,Method pydx.ode.Info.__init__()=pydx.ode.Info-class.html#__init__,Method pydx.ode.ODE.__init__()=pydx.ode.ODE-class.html#__init__,Method pydx.scalar.Scalar.__init__()=pydx.scalar.Scalar-class.html#__init__,Method pydx.scalar.optimize.Binary.__init__()=pydx.scalar.optimize.Binary-class.html#__init__,Method pydx.scalar.optimize.Interval.__init__()=pydx.scalar.optimize.Interval-class.html#__init__,Method pydx.scalar.optimize.Multi.__init__()=pydx.scalar.optimize.Multi-class.html#__init__,Method pydx.scalar.optimize.Unary.__init__()=pydx.scalar.optimize.Unary-class.html#__init__,Method pydx.scalar.symbolic.ComputationContext.__init__()=pydx.scalar.symbolic.ComputationContext-class.html#__init__,Method pydx.scalar.symbolic.Float.__init__()=pydx.scalar.symbolic.Float-class.html#__init__,Method pydx.tensor.Tensor.__init__()=pydx.tensor.Tensor-class.html#__init__,Method pydx.transform.Complex.__init__()=pydx.transform.Complex-class.html#__init__,Method pydx.transform.ComplexTransform.__init__()=pydx.transform.ComplexTransform-class.html#__init__,Method pydx.transform.LinearTransform.__init__()=pydx.transform.LinearTransform-class.html#__init__,Method pydx.transform.MobiusTransform.__init__()=pydx.transform.MobiusTransform-class.html#__init__'); return false;">__init__</a></span></span><span class="py-op">(</span> <span class="py-name">self</span><span class="py-op">,</span> <span class="py-name">x0</span><span class="py-op">,</span> <span class="py-name">y0</span><span class="py-op">,</span> <span class="py-name">paramname</span><span class="py-op">=</span><span class="py-name">paramname</span><span class="py-op">,</span> <span class="py-name">varnames</span><span class="py-op">=</span><span class="py-name">varnames</span> <span class="py-op">)</span> </span>
+<span class="py-lineno">20</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">manifold</span> <span class="py-op">=</span> <span class="py-name">manifold</span> </span>
+<span class="py-lineno">21</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">gamma</span> <span class="py-op">=</span> <span class="py-name">manifold</span><span class="py-op">.</span><span class="py-name">gamma</span> </span>
+<span class="py-lineno">22</span>  <span class="py-line">    <span class="py-keyword">if</span> <span class="py-name">options</span><span class="py-op">.</span><span id="link-22" class="py-name"><a title="pydx.field.TensorField.compile
+pydx.ode.ODE.compile" class="py-name" href="#" onclick="doclink('link-22', 'compile', 'Method pydx.field.TensorField.compile()=pydx.field.TensorField-class.html#compile,Method pydx.ode.ODE.compile()=pydx.ode.ODE-class.html#compile'); return false;">compile</a></span></span><span class="py-op">:</span> </span>
+<span class="py-lineno">23</span>  <span class="py-line">      <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">gamma</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">gamma</span><span class="py-op">.</span><span id="link-23" class="py-name"><a title="pydx.field.TensorField.compile
+pydx.ode.ODE.compile" class="py-name" href="#" onclick="doclink('link-23', 'compile', 'Method pydx.field.TensorField.compile()=pydx.field.TensorField-class.html#compile,Method pydx.ode.ODE.compile()=pydx.ode.ODE-class.html#compile'); return false;">compile</a></span></span><span class="py-op">(</span><span class="py-op">)</span> </span>
+</div><a name="Geodesic.__call__"></a><div id="Geodesic.__call__-def"><span class="py-lineno">24</span> <a class="py-toggle" href="#" id="Geodesic.__call__-toggle" onclick="toggle('Geodesic.__call__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.geodesic.Geodesic-class.html#__call__">__call__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">t</span><span class="py-op">,</span> <span class="py-param">x</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Geodesic.__call__-collapsed" style="display:none;" pad="++" indent="++++++"></div><div id="Geodesic.__call__-expanded"><span class="py-lineno">25</span>  <span class="py-line">    <span class="py-docstring">"""</span> </span>
+<span class="py-lineno">26</span>  <span class="py-line"><span class="py-docstring">      build Vector of derivatives of each component of Vector x</span> </span>
+<span class="py-lineno">27</span>  <span class="py-line"><span class="py-docstring">    """</span> </span>
+<span class="py-lineno">28</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">x</span> <span class="py-keyword">is</span> <span class="py-keyword">not</span> <span class="py-name">None</span> </span>
+<span class="py-lineno">29</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">len</span><span class="py-op">(</span><span class="py-name">x</span><span class="py-op">)</span><span class="py-op">==</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">,</span> <span class="py-name">x</span> </span>
+<span class="py-lineno">30</span>  <span class="py-line">    <span class="py-name">dx</span> <span class="py-op">=</span> <span class="py-name">x</span><span class="py-op">[</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">:</span><span class="py-op">]</span> <span class="py-comment"># these are the derivatives of x</span> </span>
+<span class="py-lineno">31</span>  <span class="py-line">    <span class="py-name">x</span> <span class="py-op">=</span> <span class="py-name">x</span><span class="py-op">[</span><span class="py-op">:</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">]</span> </span>
+<span class="py-lineno">32</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">len</span><span class="py-op">(</span><span class="py-name">x</span><span class="py-op">)</span><span class="py-op">==</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span> </span>
+<span class="py-lineno">33</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">len</span><span class="py-op">(</span><span class="py-name">dx</span><span class="py-op">)</span><span class="py-op">==</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span> </span>
+<span class="py-lineno">34</span>  <span class="py-line">    <span class="py-name">result</span> <span class="py-op">=</span> <span id="link-24" class="py-name"><a title="pydx.tensor.Tensor" class="py-name" href="#" onclick="doclink('link-24', 'Tensor', 'Class pydx.tensor.Tensor=pydx.tensor.Tensor-class.html'); return false;">Tensor</a></span></span><span class="py-op">(</span> <span class="py-op">(</span><span id="link-25" class="py-name"><a title="pydx.tensor.Tensor" class="py-name" href="#" onclick="doclink('link-25', 'Tensor', 'Class pydx.tensor.Tensor=pydx.tensor.Tensor-class.html'); return false;">Tensor</a></span></span><span class="py-op">.</span><span id="link-26" class="py-name"><a title="pydx.field.TensorField.up
+pydx.tensor.Tensor.up
+pydx.tensor.up" class="py-name" href="#" onclick="doclink('link-26', 'up', 'Variable pydx.field.TensorField.up=pydx.field.TensorField-class.html#up,Variable pydx.tensor.Tensor.up=pydx.tensor.Tensor-class.html#up,Variable pydx.tensor.up=pydx.tensor-module.html#up'); return false;">up</a></span></span><span class="py-op">,</span><span class="py-op">)</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span> <span class="py-op">)</span> </span>
+<span class="py-lineno">35</span>  <span class="py-line">    <span class="py-name">gamma</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">gamma</span><span class="py-op">(</span> <span class="py-op">*</span><span class="py-name">x</span> <span class="py-op">)</span> </span>
+<span class="py-lineno">36</span>  <span class="py-line">    <span class="py-keyword">for</span> <span class="py-name">i</span> <span class="py-keyword">in</span> <span class="py-name">range</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+<span class="py-lineno">37</span>  <span class="py-line">      <span class="py-name">result</span><span class="py-op">[</span><span class="py-name">i</span><span class="py-op">]</span> <span class="py-op">=</span> <span class="py-name">dx</span><span class="py-op">[</span><span class="py-name">i</span><span class="py-op">]</span> </span>
+<span class="py-lineno">38</span>  <span class="py-line">    <span class="py-keyword">for</span> <span class="py-name">i</span> <span class="py-keyword">in</span> <span class="py-name">range</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+<span class="py-lineno">39</span>  <span class="py-line">      <span class="py-name">r</span> <span class="py-op">=</span> <span class="py-name">sum</span><span class="py-op">(</span> <span class="py-op">[</span> <span class="py-op">-</span><span class="py-name">gamma</span><span class="py-op">[</span><span class="py-name">i</span><span class="py-op">,</span><span class="py-name">j</span><span class="py-op">,</span><span class="py-name">k</span><span class="py-op">]</span><span class="py-op">*</span><span class="py-name">dx</span><span class="py-op">[</span><span class="py-name">j</span><span class="py-op">]</span><span class="py-op">*</span><span class="py-name">dx</span><span class="py-op">[</span><span class="py-name">k</span><span class="py-op">]</span> </span>
+<span class="py-lineno">40</span>  <span class="py-line">            <span class="py-keyword">for</span> <span class="py-name">j</span> <span class="py-keyword">in</span> <span class="py-name">range</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">)</span>  </span>
+<span class="py-lineno">41</span>  <span class="py-line">            <span class="py-keyword">for</span> <span class="py-name">k</span> <span class="py-keyword">in</span> <span class="py-name">range</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">)</span> <span class="py-op">]</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span id="link-27" class="py-name"><a title="pydx.field.TensorField.scalar_zero
+pydx.mjet.MJet.scalar_zero
+pydx.ode.ODE.scalar_zero
+pydx.scalar.symbolic.Float.scalar_zero
+pydx.tensor.Tensor.scalar_zero
+pydx.transform.Complex.scalar_zero" class="py-name" href="#" onclick="doclink('link-27', 'scalar_zero', 'Variable pydx.field.TensorField.scalar_zero=pydx.field.TensorField-class.html#scalar_zero,Variable pydx.mjet.MJet.scalar_zero=pydx.mjet.MJet-class.html#scalar_zero,Variable pydx.ode.ODE.scalar_zero=pydx.ode.ODE-class.html#scalar_zero,Variable pydx.scalar.symbolic.Float.scalar_zero=pydx.scalar.symbolic.Float-class.html#scalar_zero,Variable pydx.tensor.Tensor.scalar_zero=pydx.tensor.Tensor-class.html#scalar_zero,Variable pydx.transform.Complex.scalar_zero=pydx.transform.Complex-class.html#scalar_zero'); return false;">scalar_zero</a></span></span> <span class="py-op">)</span> </span>
+<span class="py-lineno">42</span>  <span class="py-line">      <span class="py-name">result</span><span class="py-op">[</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span><span class="py-op">/</span><span class="py-number">2</span><span class="py-op">+</span><span class="py-name">i</span><span class="py-op">]</span> <span class="py-op">=</span> <span class="py-name">r</span> </span>
+<span class="py-lineno">43</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">result</span> </span>
+</div></div><span class="py-lineno">44</span>  <span class="py-line"> </span><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >pydx</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">Generated by Epydoc
+        3.0alpha3 on Sat Oct 14 10:29:56 2006</td>
+    <td align="right" class="footer">
+      <a href="http://epydoc.sourceforge.net">http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie()
+  // -->
+</script>
+  
+</body>
+</html>

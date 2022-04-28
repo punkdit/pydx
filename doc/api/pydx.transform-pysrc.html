@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pydx.transform</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >pydx</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pydx ::
+        Module&nbsp;transform
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript: void(0);" class="privatelink"
+    onclick="toggle_private();">hide private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pydx.transform-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="pydx.transform-module.html">Module pydx.transform</a></h1>
+<pre class="py-src">
+<span class="py-lineno">  1</span>  <span class="py-line"> </span>
+<span class="py-lineno">  2</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">random</span> <span class="py-keyword">import</span> <span class="py-name">random</span> </span>
+<span class="py-lineno">  3</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">time</span> <span class="py-keyword">import</span> <span class="py-name">time</span> </span>
+<span class="py-lineno">  4</span>  <span class="py-line"> </span>
+<span class="py-lineno">  5</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span> <span class="py-keyword">import</span> <span id="link-0" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-0', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span> </span>
+<span class="py-lineno">  6</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-1" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-1', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span> <span class="py-keyword">import</span> <span id="link-2" class="py-name"><a title="pydx.scalar.set_symbolic_scalar" class="py-name" href="#" onclick="doclink('link-2', 'set_symbolic_scalar', 'Function pydx.scalar.set_symbolic_scalar()=pydx.scalar-module.html#set_symbolic_scalar'); return false;">set_symbolic_scalar</a></span></span><span class="py-op">,</span> <span id="link-3" class="py-name"><a title="pydx.scalar.restore_scalar
+pydx.scalar.symbolic.Float.restore_scalar" class="py-name" href="#" onclick="doclink('link-3', 'restore_scalar', 'Function pydx.scalar.restore_scalar()=pydx.scalar-module.html#restore_scalar,Class Method pydx.scalar.symbolic.Float.restore_scalar()=pydx.scalar.symbolic.Float-class.html#restore_scalar'); return false;">restore_scalar</a></span></span> </span>
+<span class="py-lineno">  7</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-4" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-4', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span><span class="py-op">.</span><span id="link-5" class="py-name"><a title="pydx.scalar.symbolic" class="py-name" href="#" onclick="doclink('link-5', 'symbolic', 'Module pydx.scalar.symbolic=pydx.scalar.symbolic-module.html'); return false;">symbolic</a></span></span> <span class="py-keyword">import</span> <span id="link-6" class="py-name"><a title="pydx.scalar.symbolic.VarFloat" class="py-name" href="#" onclick="doclink('link-6', 'VarFloat', 'Class pydx.scalar.symbolic.VarFloat=pydx.scalar.symbolic.VarFloat-class.html'); return false;">VarFloat</a></span></span> </span>
+<span class="py-lineno">  8</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-7" class="py-name"><a title="pydx.tensor" class="py-name" href="#" onclick="doclink('link-7', 'tensor', 'Module pydx.tensor=pydx.tensor-module.html'); return false;">tensor</a></span></span> <span class="py-keyword">import</span> <span id="link-8" class="py-name"><a title="pydx.tensor.Tensor" class="py-name" href="#" onclick="doclink('link-8', 'Tensor', 'Class pydx.tensor.Tensor=pydx.tensor.Tensor-class.html'); return false;">Tensor</a></span></span><span class="py-op">,</span> <span id="link-9" class="py-name"><a title="pydx.field.TensorField.up
+pydx.tensor.Tensor.up
+pydx.tensor.up" class="py-name" href="#" onclick="doclink('link-9', 'up', 'Variable pydx.field.TensorField.up=pydx.field.TensorField-class.html#up,Variable pydx.tensor.Tensor.up=pydx.tensor.Tensor-class.html#up,Variable pydx.tensor.up=pydx.tensor-module.html#up'); return false;">up</a></span></span><span class="py-op">,</span> <span id="link-10" class="py-name"><a title="pydx.field.TensorField.dn
+pydx.tensor.Tensor.dn
+pydx.tensor.dn" class="py-name" href="#" onclick="doclink('link-10', 'dn', 'Variable pydx.field.TensorField.dn=pydx.field.TensorField-class.html#dn,Variable pydx.tensor.Tensor.dn=pydx.tensor.Tensor-class.html#dn,Variable pydx.tensor.dn=pydx.tensor-module.html#dn'); return false;">dn</a></span></span> </span>
+<span class="py-lineno">  9</span>  <span class="py-line"><span class="py-keyword">from</span> <span class="py-name">pydx</span><span class="py-op">.</span><span id="link-11" class="py-name"><a title="pydx.field" class="py-name" href="#" onclick="doclink('link-11', 'field', 'Module pydx.field=pydx.field-module.html'); return false;">field</a></span></span> <span class="py-keyword">import</span> <span id="link-12" class="py-name"><a title="pydx.field.TensorField" class="py-name" href="#" onclick="doclink('link-12', 'TensorField', 'Class pydx.field.TensorField=pydx.field.TensorField-class.html'); return false;">TensorField</a></span></span><span class="py-op">,</span> <span id="link-13" class="py-name"><a title="pydx.field.ScalarField" class="py-name" href="#" onclick="doclink('link-13', 'ScalarField', 'Class pydx.field.ScalarField=pydx.field.ScalarField-class.html'); return false;">ScalarField</a></span></span><span class="py-op">,</span> <span id="link-14" class="py-name"><a title="pydx.field.Transform" class="py-name" href="#" onclick="doclink('link-14', 'Transform', 'Class pydx.field.Transform=pydx.field.Transform-class.html'); return false;">Transform</a></span></span> </span>
+<span class="py-lineno"> 10</span>  <span class="py-line"> </span>
+<span class="py-lineno"> 11</span>  <span class="py-line"> </span>
+<span class="py-lineno"> 12</span>  <span class="py-line"><span class="py-comment">#</span> </span>
+<span class="py-lineno"> 13</span>  <span class="py-line"><span class="py-comment"></span><span class="py-comment">###############################################################################</span> </span>
+<span class="py-lineno"> 14</span>  <span class="py-line"><span class="py-comment"></span><span class="py-comment">#</span> </span>
+<span class="py-lineno"> 15</span>  <span class="py-line"><span class="py-comment"></span><span class="py-comment"># Two dimensional Transforms follow..</span> </span>
+<span class="py-lineno"> 16</span>  <span class="py-line"><span class="py-comment"></span> </span>
+<a name="Complex"></a><div id="Complex-def"><span class="py-lineno"> 17</span> <a class="py-toggle" href="#" id="Complex-toggle" onclick="toggle('Complex'); return false;">-</a><span class="py-line"><span class="py-keyword">class</span> <a class="py-def-name" href="pydx.transform.Complex-class.html">Complex</a><span class="py-op">(</span><span class="py-base-class">object</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Complex-expanded"><span class="py-lineno"> 18</span>  <span class="py-line">  <span id="link-15" class="py-name"><a title="pydx.field.TensorField.scalar_zero
+pydx.mjet.MJet.scalar_zero
+pydx.ode.ODE.scalar_zero
+pydx.scalar.symbolic.Float.scalar_zero
+pydx.tensor.Tensor.scalar_zero
+pydx.transform.Complex.scalar_zero" class="py-name" href="#" onclick="doclink('link-15', 'scalar_zero', 'Variable pydx.field.TensorField.scalar_zero=pydx.field.TensorField-class.html#scalar_zero,Variable pydx.mjet.MJet.scalar_zero=pydx.mjet.MJet-class.html#scalar_zero,Variable pydx.ode.ODE.scalar_zero=pydx.ode.ODE-class.html#scalar_zero,Variable pydx.scalar.symbolic.Float.scalar_zero=pydx.scalar.symbolic.Float-class.html#scalar_zero,Variable pydx.tensor.Tensor.scalar_zero=pydx.tensor.Tensor-class.html#scalar_zero,Variable pydx.transform.Complex.scalar_zero=pydx.transform.Complex-class.html#scalar_zero'); return false;">scalar_zero</a></span></span> <span class="py-op">=</span> <span class="py-number">0.0</span> </span>
+<span class="py-lineno"> 19</span>  <span class="py-line">  <span class="py-name">scalar_promote</span> <span class="py-op">=</span> <span id="link-16" class="py-name"><a title="float" class="py-name" href="#" onclick="doclink('link-16', 'float', 'Class float=float-class.html'); return false;">float</a></span></span> </span>
+<a name="Complex.__init__"></a><div id="Complex.__init__-def"><span class="py-lineno"> 20</span> <a class="py-toggle" href="#" id="Complex.__init__-toggle" onclick="toggle('Complex.__init__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__init__">__init__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">a</span><span class="py-op">,</span> <span class="py-param">b</span><span class="py-op">=</span><span id="link-17" class="py-name"><a title="pydx.field.TensorField.scalar_zero
+pydx.mjet.MJet.scalar_zero
+pydx.ode.ODE.scalar_zero
+pydx.scalar.symbolic.Float.scalar_zero
+pydx.tensor.Tensor.scalar_zero
+pydx.transform.Complex.scalar_zero" class="py-name" href="#" onclick="doclink('link-17', 'scalar_zero', 'Variable pydx.field.TensorField.scalar_zero=pydx.field.TensorField-class.html#scalar_zero,Variable pydx.mjet.MJet.scalar_zero=pydx.mjet.MJet-class.html#scalar_zero,Variable pydx.ode.ODE.scalar_zero=pydx.ode.ODE-class.html#scalar_zero,Variable pydx.scalar.symbolic.Float.scalar_zero=pydx.scalar.symbolic.Float-class.html#scalar_zero,Variable pydx.tensor.Tensor.scalar_zero=pydx.tensor.Tensor-class.html#scalar_zero,Variable pydx.transform.Complex.scalar_zero=pydx.transform.Complex-class.html#scalar_zero'); return false;">scalar_zero</a></span></span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__init__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__init__-expanded"><span class="py-lineno"> 21</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span> <span class="py-op">=</span> <span class="py-name">a</span> <span class="py-comment"># could be MJet, etc.</span> </span>
+<span class="py-lineno"> 22</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">b</span> </span>
+</div><a name="Complex.__getitem__"></a><div id="Complex.__getitem__-def"><span class="py-lineno"> 23</span> <a class="py-toggle" href="#" id="Complex.__getitem__-toggle" onclick="toggle('Complex.__getitem__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__getitem__">__getitem__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">idx</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__getitem__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__getitem__-expanded"><span class="py-lineno"> 24</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">)</span><span class="py-op">[</span><span class="py-name">idx</span><span class="py-op">]</span> </span>
+</div><a name="Complex.promote"></a><div id="Complex.promote-def"><span class="py-lineno"> 25</span> <a class="py-toggle" href="#" id="Complex.promote-toggle" onclick="toggle('Complex.promote'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#promote">promote</a><span class="py-op">(</span> <span class="py-param">cls</span><span class="py-op">,</span> <span class="py-param">x</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.promote-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.promote-expanded"><span class="py-lineno"> 26</span>  <span class="py-line">    <span class="py-keyword">if</span> <span class="py-name">isinstance</span><span class="py-op">(</span><span class="py-name">x</span><span class="py-op">,</span><span id="link-18" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-18', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">)</span><span class="py-op">:</span> </span>
+<span class="py-lineno"> 27</span>  <span class="py-line">      <span class="py-keyword">return</span> <span class="py-name">x</span> </span>
+<span class="py-lineno"> 28</span>  <span class="py-line">    <span class="py-keyword">elif</span> <span class="py-name">isinstance</span><span class="py-op">(</span><span class="py-name">x</span><span class="py-op">,</span><span class="py-name">tuple</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+<span class="py-lineno"> 29</span>  <span class="py-line">      <span class="py-keyword">return</span> <span id="link-19" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-19', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-op">*</span><span class="py-name">x</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 30</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-20" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-20', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-name">x</span><span class="py-op">)</span> </span>
+</div><span class="py-lineno"> 31</span>  <span class="py-line">  <span id="link-21" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-21', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span> <span class="py-op">=</span> <span class="py-name">classmethod</span><span class="py-op">(</span><span id="link-22" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-22', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">)</span> </span>
+<a name="Complex.__add__"></a><div id="Complex.__add__-def"><span class="py-lineno"> 32</span> <a class="py-toggle" href="#" id="Complex.__add__-toggle" onclick="toggle('Complex.__add__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__add__">__add__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">other</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__add__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__add__-expanded"><span class="py-lineno"> 33</span>  <span class="py-line">    <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 34</span>  <span class="py-line">    <span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">d</span> <span class="py-op">=</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 35</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-23" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-23', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">+</span><span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">+</span><span class="py-name">d</span> <span class="py-op">)</span> </span>
+</div><a name="Complex.__sub__"></a><div id="Complex.__sub__-def"><span class="py-lineno"> 36</span> <a class="py-toggle" href="#" id="Complex.__sub__-toggle" onclick="toggle('Complex.__sub__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__sub__">__sub__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">other</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__sub__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__sub__-expanded"><span class="py-lineno"> 37</span>  <span class="py-line">    <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 38</span>  <span class="py-line">    <span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">d</span> <span class="py-op">=</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 39</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-24" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-24', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">-</span><span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">-</span><span class="py-name">d</span> <span class="py-op">)</span> </span>
+</div><a name="Complex.__neg__"></a><div id="Complex.__neg__-def"><span class="py-lineno"> 40</span> <a class="py-toggle" href="#" id="Complex.__neg__-toggle" onclick="toggle('Complex.__neg__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__neg__">__neg__</a><span class="py-op">(</span> <span class="py-param">self</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__neg__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__neg__-expanded"><span class="py-lineno"> 41</span>  <span class="py-line">    <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 42</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-25" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-25', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span> <span class="py-op">-</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">b</span> <span class="py-op">)</span> </span>
+</div><a name="Complex.__mul__"></a><div id="Complex.__mul__-def"><span class="py-lineno"> 43</span> <a class="py-toggle" href="#" id="Complex.__mul__-toggle" onclick="toggle('Complex.__mul__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__mul__">__mul__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">other</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__mul__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__mul__-expanded"><span class="py-lineno"> 44</span>  <span class="py-line">    <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 45</span>  <span class="py-line">    <span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">d</span> <span class="py-op">=</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">other</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 46</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-26" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-26', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">*</span><span class="py-name">c</span><span class="py-op">-</span><span class="py-name">b</span><span class="py-op">*</span><span class="py-name">d</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">*</span><span class="py-name">c</span><span class="py-op">+</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">d</span> <span class="py-op">)</span> </span>
+</div><a name="Complex.reciprocal"></a><div id="Complex.reciprocal-def"><span class="py-lineno"> 47</span> <a class="py-toggle" href="#" id="Complex.reciprocal-toggle" onclick="toggle('Complex.reciprocal'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#reciprocal">reciprocal</a><span class="py-op">(</span> <span class="py-param">self</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.reciprocal-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.reciprocal-expanded"><span class="py-lineno"> 48</span>  <span class="py-line">    <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 49</span>  <span class="py-line">    <span class="py-name">norm</span> <span class="py-op">=</span> <span class="py-name">a</span><span class="py-op">*</span><span class="py-name">a</span><span class="py-op">+</span><span class="py-name">b</span><span class="py-op">*</span><span class="py-name">b</span> </span>
+<span class="py-lineno"> 50</span>  <span class="py-line">    <span class="py-keyword">return</span> <span id="link-27" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-27', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">/</span><span class="py-name">norm</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">b</span><span class="py-op">/</span><span class="py-name">norm</span> <span class="py-op">)</span> </span>
+</div><a name="Complex.__div__"></a><div id="Complex.__div__-def"><span class="py-lineno"> 51</span> <a class="py-toggle" href="#" id="Complex.__div__-toggle" onclick="toggle('Complex.__div__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.Complex-class.html#__div__">__div__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">other</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="Complex.__div__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="Complex.__div__-expanded"><span class="py-lineno"> 52</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">self</span> <span class="py-op">*</span> <span class="py-name">other</span><span class="py-op">.</span><span id="link-28" class="py-name"><a title="pydx.mjet.MJet.reciprocal
+pydx.transform.Complex.reciprocal" class="py-name" href="#" onclick="doclink('link-28', 'reciprocal', 'Method pydx.mjet.MJet.reciprocal()=pydx.mjet.MJet-class.html#reciprocal,Method pydx.transform.Complex.reciprocal()=pydx.transform.Complex-class.html#reciprocal'); return false;">reciprocal</a></span></span><span class="py-op">(</span><span class="py-op">)</span> </span>
+</div></div><span class="py-lineno"> 53</span>  <span class="py-line"><span id="link-29" class="py-name"><a title="pydx.ode.ODE.scalar
+pydx.scalar
+pydx.tensor.Tensor.scalar" class="py-name" href="#" onclick="doclink('link-29', 'scalar', 'Variable pydx.ode.ODE.scalar=pydx.ode.ODE-class.html#scalar,Package pydx.scalar=pydx.scalar-module.html,Method pydx.tensor.Tensor.scalar()=pydx.tensor.Tensor-class.html#scalar'); return false;">scalar</a></span></span><span class="py-op">.</span><span id="link-30" class="py-name"><a title="pydx.scalar.Scalar
+pydx.tensor.Scalar" class="py-name" href="#" onclick="doclink('link-30', 'Scalar', 'Class pydx.scalar.Scalar=pydx.scalar.Scalar-class.html,Function pydx.tensor.Scalar()=pydx.tensor-module.html#Scalar'); return false;">Scalar</a></span></span><span class="py-op">.</span><span id="link-31" class="py-name"><a title="pydx.scalar.Scalar.clients" class="py-name" href="#" onclick="doclink('link-31', 'clients', 'Variable pydx.scalar.Scalar.clients=pydx.scalar.Scalar-class.html#clients'); return false;">clients</a></span></span><span class="py-op">.</span><span id="link-32" class="py-name"><a title="pydx.scalar.symbolic.ComputationContext.append" class="py-name" href="#" onclick="doclink('link-32', 'append', 'Method pydx.scalar.symbolic.ComputationContext.append()=pydx.scalar.symbolic.ComputationContext-class.html#append'); return false;">append</a></span></span><span class="py-op">(</span><span id="link-33" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-33', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 54</span>  <span class="py-line"> </span>
+<a name="LinearTransform"></a><div id="LinearTransform-def"><span class="py-lineno"> 55</span> <a class="py-toggle" href="#" id="LinearTransform-toggle" onclick="toggle('LinearTransform'); return false;">-</a><span class="py-line"><span class="py-keyword">class</span> <a class="py-def-name" href="pydx.transform.LinearTransform-class.html">LinearTransform</a><span class="py-op">(</span><span class="py-base-class">Transform</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="LinearTransform-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="LinearTransform-expanded"><a name="LinearTransform.__init__"></a><div id="LinearTransform.__init__-def"><span class="py-lineno"> 56</span> <a class="py-toggle" href="#" id="LinearTransform.__init__-toggle" onclick="toggle('LinearTransform.__init__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.LinearTransform-class.html#__init__">__init__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">a00</span><span class="py-op">,</span> <span class="py-param">a01</span><span class="py-op">,</span> <span class="py-param">a10</span><span class="py-op">,</span> <span class="py-param">a11</span><span class="py-op">,</span> <span class="py-param">inverse</span><span class="py-op">=</span><span class="py-name">None</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="LinearTransform.__init__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="LinearTransform.__init__-expanded"><span class="py-lineno"> 57</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span> <span class="py-op">=</span> <span class="py-number">2</span> </span>
+<span class="py-lineno"> 58</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a00</span> <span class="py-op">=</span> <span class="py-name">a00</span> </span>
+<span class="py-lineno"> 59</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a01</span> <span class="py-op">=</span> <span class="py-name">a01</span> </span>
+<span class="py-lineno"> 60</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a10</span> <span class="py-op">=</span> <span class="py-name">a10</span> </span>
+<span class="py-lineno"> 61</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a11</span> <span class="py-op">=</span> <span class="py-name">a11</span> </span>
+<span class="py-lineno"> 62</span>  <span class="py-line">    <span class="py-keyword">if</span> <span class="py-name">inverse</span> <span class="py-keyword">is</span> <span class="py-name">None</span><span class="py-op">:</span> </span>
+<span class="py-lineno"> 63</span>  <span class="py-line">      <span class="py-name">det</span> <span class="py-op">=</span> <span class="py-name">a00</span><span class="py-op">*</span><span class="py-name">a11</span> <span class="py-op">-</span> <span class="py-name">a01</span><span class="py-op">*</span><span class="py-name">a10</span> </span>
+<span class="py-lineno"> 64</span>  <span class="py-line">      <span class="py-name">a00</span><span class="py-op">,</span> <span class="py-name">a01</span><span class="py-op">,</span> <span class="py-name">a10</span><span class="py-op">,</span> <span class="py-name">a11</span> <span class="py-op">=</span> <span class="py-name">a11</span><span class="py-op">/</span><span class="py-name">det</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">a01</span><span class="py-op">/</span><span class="py-name">det</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">a10</span><span class="py-op">/</span><span class="py-name">det</span><span class="py-op">,</span> <span class="py-name">a00</span><span class="py-op">/</span><span class="py-name">det</span> </span>
+<span class="py-lineno"> 65</span>  <span class="py-line">      <span class="py-name">inverse</span> <span class="py-op">=</span> <span id="link-34" class="py-name"><a title="pydx.transform.LinearTransform" class="py-name" href="#" onclick="doclink('link-34', 'LinearTransform', 'Class pydx.transform.LinearTransform=pydx.transform.LinearTransform-class.html'); return false;">LinearTransform</a></span></span><span class="py-op">(</span> <span class="py-name">a00</span><span class="py-op">,</span> <span class="py-name">a01</span><span class="py-op">,</span> <span class="py-name">a10</span><span class="py-op">,</span> <span class="py-name">a11</span><span class="py-op">,</span> <span class="py-name">self</span> <span class="py-op">)</span> </span>
+<span class="py-lineno"> 66</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">inverse</span> </span>
+<span class="py-lineno"> 67</span>  <span class="py-line">    <span id="link-35" class="py-name"><a title="pydx.field.Transform" class="py-name" href="#" onclick="doclink('link-35', 'Transform', 'Class pydx.field.Transform=pydx.field.Transform-class.html'); return false;">Transform</a></span></span><span class="py-op">.</span><span id="link-36" class="py-name"><a title="pydx.field.AdaptedTensorField.__init__
+pydx.field.AddTensorField.__init__
+pydx.field.CommaTensorField.__init__
+pydx.field.ConcreteTensorField.__init__
+pydx.field.ContractTensorField.__init__
+pydx.field.IdentityTransform.__init__
+pydx.field.MulTensorField.__init__
+pydx.field.NegTensorField.__init__
+pydx.field.ScalarField.__init__
+pydx.field.ScalarMulTensorField.__init__
+pydx.field.SubTensorField.__init__
+pydx.field.TensorField.__init__
+pydx.field.Transform.__init__
+pydx.field.TransformTensorField.__init__
+pydx.field.TransposeTensorField.__init__
+pydx.field.ViewTensorField.__init__
+pydx.geodesic.Geodesic.__init__
+pydx.metric.HyperbolicMetric.Inverse.__init__
+pydx.metric.HyperbolicMetric.__init__
+pydx.metric.KerrMetric.Inverse.__init__
+pydx.metric.KerrMetric.__init__
+pydx.metric.RZCurzonMetric.Inverse.__init__
+pydx.metric.RZCurzonMetric.__init__
+pydx.metric.SpatialCurzonMetric.Inverse.__init__
+pydx.metric.SpatialCurzonMetric.__init__
+pydx.metric.SwartzchildMetric.Inverse.__init__
+pydx.metric.SwartzchildMetric.__init__
+pydx.mjet.ACosJet.__init__
+pydx.mjet.ASinJet.__init__
+pydx.mjet.ATanJet.__init__
+pydx.mjet.AddJet.__init__
+pydx.mjet.CosJet.__init__
+pydx.mjet.Derivation.__init__
+pydx.mjet.DivJet.__init__
+pydx.mjet.IntPowJet.__init__
+pydx.mjet.Jet.__init__
+pydx.mjet.JetOp.__init__
+pydx.mjet.MJet.__init__
+pydx.mjet.MulJet.__init__
+pydx.mjet.NegJet.__init__
+pydx.mjet.PromotedJet.__init__
+pydx.mjet.SinJet.__init__
+pydx.mjet.SliceJet.__init__
+pydx.mjet.Spray.__init__
+pydx.mjet.SprayItem.__init__
+pydx.mjet.SubJet.__init__
+pydx.mjet.UnaryJetOp.__init__
+pydx.ode.Info.__init__
+pydx.ode.ODE.__init__
+pydx.scalar.Scalar.__init__
+pydx.scalar.optimize.Binary.__init__
+pydx.scalar.optimize.Interval.__init__
+pydx.scalar.optimize.Multi.__init__
+pydx.scalar.optimize.Unary.__init__
+pydx.scalar.symbolic.ComputationContext.__init__
+pydx.scalar.symbolic.Float.__init__
+pydx.tensor.Tensor.__init__
+pydx.transform.Complex.__init__
+pydx.transform.ComplexTransform.__init__
+pydx.transform.LinearTransform.__init__
+pydx.transform.MobiusTransform.__init__" class="py-name" href="#" onclick="doclink('link-36', '__init__', 'Method pydx.field.AdaptedTensorField.__init__()=pydx.field.AdaptedTensorField-class.html#__init__,Method pydx.field.AddTensorField.__init__()=pydx.field.AddTensorField-class.html#__init__,Method pydx.field.CommaTensorField.__init__()=pydx.field.CommaTensorField-class.html#__init__,Method pydx.field.ConcreteTensorField.__init__()=pydx.field.ConcreteTensorField-class.html#__init__,Method pydx.field.ContractTensorField.__init__()=pydx.field.ContractTensorField-class.html#__init__,Method pydx.field.IdentityTransform.__init__()=pydx.field.IdentityTransform-class.html#__init__,Method pydx.field.MulTensorField.__init__()=pydx.field.MulTensorField-class.html#__init__,Method pydx.field.NegTensorField.__init__()=pydx.field.NegTensorField-class.html#__init__,Method pydx.field.ScalarField.__init__()=pydx.field.ScalarField-class.html#__init__,Method pydx.field.ScalarMulTensorField.__init__()=pydx.field.ScalarMulTensorField-class.html#__init__,Method pydx.field.SubTensorField.__init__()=pydx.field.SubTensorField-class.html#__init__,Method pydx.field.TensorField.__init__()=pydx.field.TensorField-class.html#__init__,Method pydx.field.Transform.__init__()=pydx.field.Transform-class.html#__init__,Method pydx.field.TransformTensorField.__init__()=pydx.field.TransformTensorField-class.html#__init__,Method pydx.field.TransposeTensorField.__init__()=pydx.field.TransposeTensorField-class.html#__init__,Method pydx.field.ViewTensorField.__init__()=pydx.field.ViewTensorField-class.html#__init__,Method pydx.geodesic.Geodesic.__init__()=pydx.geodesic.Geodesic-class.html#__init__,Method pydx.metric.HyperbolicMetric.Inverse.__init__()=pydx.metric.HyperbolicMetric.Inverse-class.html#__init__,Method pydx.metric.HyperbolicMetric.__init__()=pydx.metric.HyperbolicMetric-class.html#__init__,Method pydx.metric.KerrMetric.Inverse.__init__()=pydx.metric.KerrMetric.Inverse-class.html#__init__,Method pydx.metric.KerrMetric.__init__()=pydx.metric.KerrMetric-class.html#__init__,Method pydx.metric.RZCurzonMetric.Inverse.__init__()=pydx.metric.RZCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.RZCurzonMetric.__init__()=pydx.metric.RZCurzonMetric-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.Inverse.__init__()=pydx.metric.SpatialCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.__init__()=pydx.metric.SpatialCurzonMetric-class.html#__init__,Method pydx.metric.SwartzchildMetric.Inverse.__init__()=pydx.metric.SwartzchildMetric.Inverse-class.html#__init__,Method pydx.metric.SwartzchildMetric.__init__()=pydx.metric.SwartzchildMetric-class.html#__init__,Method pydx.mjet.ACosJet.__init__()=pydx.mjet.ACosJet-class.html#__init__,Method pydx.mjet.ASinJet.__init__()=pydx.mjet.ASinJet-class.html#__init__,Method pydx.mjet.ATanJet.__init__()=pydx.mjet.ATanJet-class.html#__init__,Method pydx.mjet.AddJet.__init__()=pydx.mjet.AddJet-class.html#__init__,Method pydx.mjet.CosJet.__init__()=pydx.mjet.CosJet-class.html#__init__,Method pydx.mjet.Derivation.__init__()=pydx.mjet.Derivation-class.html#__init__,Method pydx.mjet.DivJet.__init__()=pydx.mjet.DivJet-class.html#__init__,Method pydx.mjet.IntPowJet.__init__()=pydx.mjet.IntPowJet-class.html#__init__,Method pydx.mjet.Jet.__init__()=pydx.mjet.Jet-class.html#__init__,Method pydx.mjet.JetOp.__init__()=pydx.mjet.JetOp-class.html#__init__,Method pydx.mjet.MJet.__init__()=pydx.mjet.MJet-class.html#__init__,Method pydx.mjet.MulJet.__init__()=pydx.mjet.MulJet-class.html#__init__,Method pydx.mjet.NegJet.__init__()=pydx.mjet.NegJet-class.html#__init__,Method pydx.mjet.PromotedJet.__init__()=pydx.mjet.PromotedJet-class.html#__init__,Method pydx.mjet.SinJet.__init__()=pydx.mjet.SinJet-class.html#__init__,Method pydx.mjet.SliceJet.__init__()=pydx.mjet.SliceJet-class.html#__init__,Method pydx.mjet.Spray.__init__()=pydx.mjet.Spray-class.html#__init__,Method pydx.mjet.SprayItem.__init__()=pydx.mjet.SprayItem-class.html#__init__,Method pydx.mjet.SubJet.__init__()=pydx.mjet.SubJet-class.html#__init__,Method pydx.mjet.UnaryJetOp.__init__()=pydx.mjet.UnaryJetOp-class.html#__init__,Method pydx.ode.Info.__init__()=pydx.ode.Info-class.html#__init__,Method pydx.ode.ODE.__init__()=pydx.ode.ODE-class.html#__init__,Method pydx.scalar.Scalar.__init__()=pydx.scalar.Scalar-class.html#__init__,Method pydx.scalar.optimize.Binary.__init__()=pydx.scalar.optimize.Binary-class.html#__init__,Method pydx.scalar.optimize.Interval.__init__()=pydx.scalar.optimize.Interval-class.html#__init__,Method pydx.scalar.optimize.Multi.__init__()=pydx.scalar.optimize.Multi-class.html#__init__,Method pydx.scalar.optimize.Unary.__init__()=pydx.scalar.optimize.Unary-class.html#__init__,Method pydx.scalar.symbolic.ComputationContext.__init__()=pydx.scalar.symbolic.ComputationContext-class.html#__init__,Method pydx.scalar.symbolic.Float.__init__()=pydx.scalar.symbolic.Float-class.html#__init__,Method pydx.tensor.Tensor.__init__()=pydx.tensor.Tensor-class.html#__init__,Method pydx.transform.Complex.__init__()=pydx.transform.Complex-class.html#__init__,Method pydx.transform.ComplexTransform.__init__()=pydx.transform.ComplexTransform-class.html#__init__,Method pydx.transform.LinearTransform.__init__()=pydx.transform.LinearTransform-class.html#__init__,Method pydx.transform.MobiusTransform.__init__()=pydx.transform.MobiusTransform-class.html#__init__'); return false;">__init__</a></span></span><span class="py-op">(</span> <span class="py-name">self</span><span class="py-op">,</span> <span class="py-op">[</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-37" class="py-name"><a title="pydx.transform.ComplexTransform.call0
+pydx.transform.LinearTransform.call0
+pydx.transform.MobiusTransform.call0" class="py-name" href="#" onclick="doclink('link-37', 'call0', 'Method pydx.transform.ComplexTransform.call0()=pydx.transform.ComplexTransform-class.html#call0,Method pydx.transform.LinearTransform.call0()=pydx.transform.LinearTransform-class.html#call0,Method pydx.transform.MobiusTransform.call0()=pydx.transform.MobiusTransform-class.html#call0'); return false;">call0</a></span></span><span class="py-op">,</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-38" class="py-name"><a title="pydx.transform.ComplexTransform.call1
+pydx.transform.LinearTransform.call1
+pydx.transform.MobiusTransform.call1" class="py-name" href="#" onclick="doclink('link-38', 'call1', 'Method pydx.transform.ComplexTransform.call1()=pydx.transform.ComplexTransform-class.html#call1,Method pydx.transform.LinearTransform.call1()=pydx.transform.LinearTransform-class.html#call1,Method pydx.transform.MobiusTransform.call1()=pydx.transform.MobiusTransform-class.html#call1'); return false;">call1</a></span></span><span class="py-op">]</span><span class="py-op">,</span> <span class="py-name">inverse</span> <span class="py-op">)</span> </span>
+</div><a name="LinearTransform.call0"></a><div id="LinearTransform.call0-def"><span class="py-lineno"> 68</span> <a class="py-toggle" href="#" id="LinearTransform.call0-toggle" onclick="toggle('LinearTransform.call0'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.LinearTransform-class.html#call0">call0</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">x0</span><span class="py-op">,</span> <span class="py-param">x1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="LinearTransform.call0-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="LinearTransform.call0-expanded"><span class="py-lineno"> 69</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a00</span><span class="py-op">*</span><span class="py-name">x0</span> <span class="py-op">+</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a01</span><span class="py-op">*</span><span class="py-name">x1</span> </span>
+</div><a name="LinearTransform.call1"></a><div id="LinearTransform.call1-def"><span class="py-lineno"> 70</span> <a class="py-toggle" href="#" id="LinearTransform.call1-toggle" onclick="toggle('LinearTransform.call1'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.LinearTransform-class.html#call1">call1</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">x0</span><span class="py-op">,</span> <span class="py-param">x1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="LinearTransform.call1-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="LinearTransform.call1-expanded"><span class="py-lineno"> 71</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a10</span><span class="py-op">*</span><span class="py-name">x0</span> <span class="py-op">+</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a11</span><span class="py-op">*</span><span class="py-name">x1</span> </span>
+</div></div><span class="py-lineno"> 72</span>  <span class="py-line"> </span>
+<a name="ComplexTransform"></a><div id="ComplexTransform-def"><span class="py-lineno"> 73</span> <a class="py-toggle" href="#" id="ComplexTransform-toggle" onclick="toggle('ComplexTransform'); return false;">-</a><span class="py-line"><span class="py-keyword">class</span> <a class="py-def-name" href="pydx.transform.ComplexTransform-class.html">ComplexTransform</a><span class="py-op">(</span><span class="py-base-class">Transform</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="ComplexTransform-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ComplexTransform-expanded"><a name="ComplexTransform.__init__"></a><div id="ComplexTransform.__init__-def"><span class="py-lineno"> 74</span> <a class="py-toggle" href="#" id="ComplexTransform.__init__-toggle" onclick="toggle('ComplexTransform.__init__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.ComplexTransform-class.html#__init__">__init__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">a</span><span class="py-op">,</span> <span class="py-param">b</span><span class="py-op">,</span> <span class="py-param">inverse</span><span class="py-op">=</span><span class="py-name">None</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="ComplexTransform.__init__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="ComplexTransform.__init__-expanded"><span class="py-lineno"> 75</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span> <span class="py-op">=</span> <span class="py-number">2</span> </span>
+<span class="py-lineno"> 76</span>  <span class="py-line">    <span class="py-name">a</span> <span class="py-op">=</span> <span id="link-39" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-39', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-40" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-40', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">a</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 77</span>  <span class="py-line">    <span class="py-name">b</span> <span class="py-op">=</span> <span id="link-41" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-41', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-42" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-42', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">b</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 78</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span> <span class="py-op">=</span> <span class="py-name">a</span> </span>
+<span class="py-lineno"> 79</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> <span class="py-op">=</span> <span class="py-name">b</span> </span>
+<span class="py-lineno"> 80</span>  <span class="py-line">    <span class="py-keyword">if</span> <span class="py-name">inverse</span> <span class="py-keyword">is</span> <span class="py-name">None</span><span class="py-op">:</span> </span>
+<span class="py-lineno"> 81</span>  <span class="py-line">      <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span> <span class="py-op">=</span> <span id="link-43" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-43', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-number">1.0</span><span class="py-op">)</span><span class="py-op">/</span><span class="py-name">a</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">b</span><span class="py-op">/</span><span class="py-name">a</span> </span>
+<span class="py-lineno"> 82</span>  <span class="py-line">      <span class="py-name">inverse</span> <span class="py-op">=</span> <span id="link-44" class="py-name"><a title="pydx.transform.ComplexTransform" class="py-name" href="#" onclick="doclink('link-44', 'ComplexTransform', 'Class pydx.transform.ComplexTransform=pydx.transform.ComplexTransform-class.html'); return false;">ComplexTransform</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">,</span> <span class="py-name">self</span> <span class="py-op">)</span> </span>
+<span class="py-lineno"> 83</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">inverse</span> </span>
+<span class="py-lineno"> 84</span>  <span class="py-line">    <span id="link-45" class="py-name"><a title="pydx.field.Transform" class="py-name" href="#" onclick="doclink('link-45', 'Transform', 'Class pydx.field.Transform=pydx.field.Transform-class.html'); return false;">Transform</a></span></span><span class="py-op">.</span><span id="link-46" class="py-name"><a title="pydx.field.AdaptedTensorField.__init__
+pydx.field.AddTensorField.__init__
+pydx.field.CommaTensorField.__init__
+pydx.field.ConcreteTensorField.__init__
+pydx.field.ContractTensorField.__init__
+pydx.field.IdentityTransform.__init__
+pydx.field.MulTensorField.__init__
+pydx.field.NegTensorField.__init__
+pydx.field.ScalarField.__init__
+pydx.field.ScalarMulTensorField.__init__
+pydx.field.SubTensorField.__init__
+pydx.field.TensorField.__init__
+pydx.field.Transform.__init__
+pydx.field.TransformTensorField.__init__
+pydx.field.TransposeTensorField.__init__
+pydx.field.ViewTensorField.__init__
+pydx.geodesic.Geodesic.__init__
+pydx.metric.HyperbolicMetric.Inverse.__init__
+pydx.metric.HyperbolicMetric.__init__
+pydx.metric.KerrMetric.Inverse.__init__
+pydx.metric.KerrMetric.__init__
+pydx.metric.RZCurzonMetric.Inverse.__init__
+pydx.metric.RZCurzonMetric.__init__
+pydx.metric.SpatialCurzonMetric.Inverse.__init__
+pydx.metric.SpatialCurzonMetric.__init__
+pydx.metric.SwartzchildMetric.Inverse.__init__
+pydx.metric.SwartzchildMetric.__init__
+pydx.mjet.ACosJet.__init__
+pydx.mjet.ASinJet.__init__
+pydx.mjet.ATanJet.__init__
+pydx.mjet.AddJet.__init__
+pydx.mjet.CosJet.__init__
+pydx.mjet.Derivation.__init__
+pydx.mjet.DivJet.__init__
+pydx.mjet.IntPowJet.__init__
+pydx.mjet.Jet.__init__
+pydx.mjet.JetOp.__init__
+pydx.mjet.MJet.__init__
+pydx.mjet.MulJet.__init__
+pydx.mjet.NegJet.__init__
+pydx.mjet.PromotedJet.__init__
+pydx.mjet.SinJet.__init__
+pydx.mjet.SliceJet.__init__
+pydx.mjet.Spray.__init__
+pydx.mjet.SprayItem.__init__
+pydx.mjet.SubJet.__init__
+pydx.mjet.UnaryJetOp.__init__
+pydx.ode.Info.__init__
+pydx.ode.ODE.__init__
+pydx.scalar.Scalar.__init__
+pydx.scalar.optimize.Binary.__init__
+pydx.scalar.optimize.Interval.__init__
+pydx.scalar.optimize.Multi.__init__
+pydx.scalar.optimize.Unary.__init__
+pydx.scalar.symbolic.ComputationContext.__init__
+pydx.scalar.symbolic.Float.__init__
+pydx.tensor.Tensor.__init__
+pydx.transform.Complex.__init__
+pydx.transform.ComplexTransform.__init__
+pydx.transform.LinearTransform.__init__
+pydx.transform.MobiusTransform.__init__" class="py-name" href="#" onclick="doclink('link-46', '__init__', 'Method pydx.field.AdaptedTensorField.__init__()=pydx.field.AdaptedTensorField-class.html#__init__,Method pydx.field.AddTensorField.__init__()=pydx.field.AddTensorField-class.html#__init__,Method pydx.field.CommaTensorField.__init__()=pydx.field.CommaTensorField-class.html#__init__,Method pydx.field.ConcreteTensorField.__init__()=pydx.field.ConcreteTensorField-class.html#__init__,Method pydx.field.ContractTensorField.__init__()=pydx.field.ContractTensorField-class.html#__init__,Method pydx.field.IdentityTransform.__init__()=pydx.field.IdentityTransform-class.html#__init__,Method pydx.field.MulTensorField.__init__()=pydx.field.MulTensorField-class.html#__init__,Method pydx.field.NegTensorField.__init__()=pydx.field.NegTensorField-class.html#__init__,Method pydx.field.ScalarField.__init__()=pydx.field.ScalarField-class.html#__init__,Method pydx.field.ScalarMulTensorField.__init__()=pydx.field.ScalarMulTensorField-class.html#__init__,Method pydx.field.SubTensorField.__init__()=pydx.field.SubTensorField-class.html#__init__,Method pydx.field.TensorField.__init__()=pydx.field.TensorField-class.html#__init__,Method pydx.field.Transform.__init__()=pydx.field.Transform-class.html#__init__,Method pydx.field.TransformTensorField.__init__()=pydx.field.TransformTensorField-class.html#__init__,Method pydx.field.TransposeTensorField.__init__()=pydx.field.TransposeTensorField-class.html#__init__,Method pydx.field.ViewTensorField.__init__()=pydx.field.ViewTensorField-class.html#__init__,Method pydx.geodesic.Geodesic.__init__()=pydx.geodesic.Geodesic-class.html#__init__,Method pydx.metric.HyperbolicMetric.Inverse.__init__()=pydx.metric.HyperbolicMetric.Inverse-class.html#__init__,Method pydx.metric.HyperbolicMetric.__init__()=pydx.metric.HyperbolicMetric-class.html#__init__,Method pydx.metric.KerrMetric.Inverse.__init__()=pydx.metric.KerrMetric.Inverse-class.html#__init__,Method pydx.metric.KerrMetric.__init__()=pydx.metric.KerrMetric-class.html#__init__,Method pydx.metric.RZCurzonMetric.Inverse.__init__()=pydx.metric.RZCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.RZCurzonMetric.__init__()=pydx.metric.RZCurzonMetric-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.Inverse.__init__()=pydx.metric.SpatialCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.__init__()=pydx.metric.SpatialCurzonMetric-class.html#__init__,Method pydx.metric.SwartzchildMetric.Inverse.__init__()=pydx.metric.SwartzchildMetric.Inverse-class.html#__init__,Method pydx.metric.SwartzchildMetric.__init__()=pydx.metric.SwartzchildMetric-class.html#__init__,Method pydx.mjet.ACosJet.__init__()=pydx.mjet.ACosJet-class.html#__init__,Method pydx.mjet.ASinJet.__init__()=pydx.mjet.ASinJet-class.html#__init__,Method pydx.mjet.ATanJet.__init__()=pydx.mjet.ATanJet-class.html#__init__,Method pydx.mjet.AddJet.__init__()=pydx.mjet.AddJet-class.html#__init__,Method pydx.mjet.CosJet.__init__()=pydx.mjet.CosJet-class.html#__init__,Method pydx.mjet.Derivation.__init__()=pydx.mjet.Derivation-class.html#__init__,Method pydx.mjet.DivJet.__init__()=pydx.mjet.DivJet-class.html#__init__,Method pydx.mjet.IntPowJet.__init__()=pydx.mjet.IntPowJet-class.html#__init__,Method pydx.mjet.Jet.__init__()=pydx.mjet.Jet-class.html#__init__,Method pydx.mjet.JetOp.__init__()=pydx.mjet.JetOp-class.html#__init__,Method pydx.mjet.MJet.__init__()=pydx.mjet.MJet-class.html#__init__,Method pydx.mjet.MulJet.__init__()=pydx.mjet.MulJet-class.html#__init__,Method pydx.mjet.NegJet.__init__()=pydx.mjet.NegJet-class.html#__init__,Method pydx.mjet.PromotedJet.__init__()=pydx.mjet.PromotedJet-class.html#__init__,Method pydx.mjet.SinJet.__init__()=pydx.mjet.SinJet-class.html#__init__,Method pydx.mjet.SliceJet.__init__()=pydx.mjet.SliceJet-class.html#__init__,Method pydx.mjet.Spray.__init__()=pydx.mjet.Spray-class.html#__init__,Method pydx.mjet.SprayItem.__init__()=pydx.mjet.SprayItem-class.html#__init__,Method pydx.mjet.SubJet.__init__()=pydx.mjet.SubJet-class.html#__init__,Method pydx.mjet.UnaryJetOp.__init__()=pydx.mjet.UnaryJetOp-class.html#__init__,Method pydx.ode.Info.__init__()=pydx.ode.Info-class.html#__init__,Method pydx.ode.ODE.__init__()=pydx.ode.ODE-class.html#__init__,Method pydx.scalar.Scalar.__init__()=pydx.scalar.Scalar-class.html#__init__,Method pydx.scalar.optimize.Binary.__init__()=pydx.scalar.optimize.Binary-class.html#__init__,Method pydx.scalar.optimize.Interval.__init__()=pydx.scalar.optimize.Interval-class.html#__init__,Method pydx.scalar.optimize.Multi.__init__()=pydx.scalar.optimize.Multi-class.html#__init__,Method pydx.scalar.optimize.Unary.__init__()=pydx.scalar.optimize.Unary-class.html#__init__,Method pydx.scalar.symbolic.ComputationContext.__init__()=pydx.scalar.symbolic.ComputationContext-class.html#__init__,Method pydx.scalar.symbolic.Float.__init__()=pydx.scalar.symbolic.Float-class.html#__init__,Method pydx.tensor.Tensor.__init__()=pydx.tensor.Tensor-class.html#__init__,Method pydx.transform.Complex.__init__()=pydx.transform.Complex-class.html#__init__,Method pydx.transform.ComplexTransform.__init__()=pydx.transform.ComplexTransform-class.html#__init__,Method pydx.transform.LinearTransform.__init__()=pydx.transform.LinearTransform-class.html#__init__,Method pydx.transform.MobiusTransform.__init__()=pydx.transform.MobiusTransform-class.html#__init__'); return false;">__init__</a></span></span><span class="py-op">(</span> <span class="py-name">self</span><span class="py-op">,</span> <span class="py-op">[</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-47" class="py-name"><a title="pydx.transform.ComplexTransform.call0
+pydx.transform.LinearTransform.call0
+pydx.transform.MobiusTransform.call0" class="py-name" href="#" onclick="doclink('link-47', 'call0', 'Method pydx.transform.ComplexTransform.call0()=pydx.transform.ComplexTransform-class.html#call0,Method pydx.transform.LinearTransform.call0()=pydx.transform.LinearTransform-class.html#call0,Method pydx.transform.MobiusTransform.call0()=pydx.transform.MobiusTransform-class.html#call0'); return false;">call0</a></span></span><span class="py-op">,</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-48" class="py-name"><a title="pydx.transform.ComplexTransform.call1
+pydx.transform.LinearTransform.call1
+pydx.transform.MobiusTransform.call1" class="py-name" href="#" onclick="doclink('link-48', 'call1', 'Method pydx.transform.ComplexTransform.call1()=pydx.transform.ComplexTransform-class.html#call1,Method pydx.transform.LinearTransform.call1()=pydx.transform.LinearTransform-class.html#call1,Method pydx.transform.MobiusTransform.call1()=pydx.transform.MobiusTransform-class.html#call1'); return false;">call1</a></span></span><span class="py-op">]</span><span class="py-op">,</span> <span class="py-name">inverse</span> <span class="py-op">)</span> </span>
+</div><a name="ComplexTransform.call0"></a><div id="ComplexTransform.call0-def"><span class="py-lineno"> 85</span> <a class="py-toggle" href="#" id="ComplexTransform.call0-toggle" onclick="toggle('ComplexTransform.call0'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.ComplexTransform-class.html#call0">call0</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">z0</span><span class="py-op">,</span> <span class="py-param">z1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="ComplexTransform.call0-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="ComplexTransform.call0-expanded"><span class="py-lineno"> 86</span>  <span class="py-line">    <span class="py-name">z</span> <span class="py-op">=</span> <span id="link-49" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-49', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-name">z0</span><span class="py-op">,</span><span class="py-name">z1</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 87</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">)</span><span class="py-op">[</span><span class="py-number">0</span><span class="py-op">]</span> </span>
+</div><a name="ComplexTransform.call1"></a><div id="ComplexTransform.call1-def"><span class="py-lineno"> 88</span> <a class="py-toggle" href="#" id="ComplexTransform.call1-toggle" onclick="toggle('ComplexTransform.call1'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.ComplexTransform-class.html#call1">call1</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">z0</span><span class="py-op">,</span> <span class="py-param">z1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="ComplexTransform.call1-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="ComplexTransform.call1-expanded"><span class="py-lineno"> 89</span>  <span class="py-line">    <span class="py-name">z</span> <span class="py-op">=</span> <span id="link-50" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-50', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-name">z0</span><span class="py-op">,</span><span class="py-name">z1</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 90</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">)</span><span class="py-op">[</span><span class="py-number">1</span><span class="py-op">]</span> </span>
+</div></div><span class="py-lineno"> 91</span>  <span class="py-line"> </span>
+<a name="MobiusTransform"></a><div id="MobiusTransform-def"><span class="py-lineno"> 92</span> <a class="py-toggle" href="#" id="MobiusTransform-toggle" onclick="toggle('MobiusTransform'); return false;">-</a><span class="py-line"><span class="py-keyword">class</span> <a class="py-def-name" href="pydx.transform.MobiusTransform-class.html">MobiusTransform</a><span class="py-op">(</span><span class="py-base-class">Transform</span><span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="MobiusTransform-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="MobiusTransform-expanded"><a name="MobiusTransform.__init__"></a><div id="MobiusTransform.__init__-def"><span class="py-lineno"> 93</span> <a class="py-toggle" href="#" id="MobiusTransform.__init__-toggle" onclick="toggle('MobiusTransform.__init__'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.MobiusTransform-class.html#__init__">__init__</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">a</span><span class="py-op">,</span> <span class="py-param">b</span><span class="py-op">,</span> <span class="py-param">c</span><span class="py-op">,</span> <span class="py-param">d</span><span class="py-op">,</span> <span class="py-param">inverse</span><span class="py-op">=</span><span class="py-name">None</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="MobiusTransform.__init__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="MobiusTransform.__init__-expanded"><span class="py-lineno"> 94</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">dim</span> <span class="py-op">=</span> <span class="py-number">2</span> </span>
+<span class="py-lineno"> 95</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span> <span class="py-op">=</span> <span id="link-51" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-51', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-52" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-52', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">a</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 96</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span> <span class="py-op">=</span> <span id="link-53" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-53', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-54" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-54', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">b</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 97</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">c</span> <span class="py-op">=</span> <span id="link-55" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-55', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-56" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-56', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">c</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 98</span>  <span class="py-line">    <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">d</span> <span class="py-op">=</span> <span id="link-57" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-57', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-58" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-58', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">d</span><span class="py-op">)</span> </span>
+<span class="py-lineno"> 99</span>  <span class="py-line">    <span class="py-keyword">assert</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">d</span><span class="py-op">-</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">*</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">c</span> <span class="py-op">!=</span> <span id="link-59" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-59', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">.</span><span id="link-60" class="py-name"><a title="pydx.mjet.MJet.promote
+pydx.scalar.mpfi.promote
+pydx.scalar.optimize.Interval.promote
+pydx.scalar.symbolic.Float.promote
+pydx.transform.Complex.promote" class="py-name" href="#" onclick="doclink('link-60', 'promote', 'Method pydx.mjet.MJet.promote()=pydx.mjet.MJet-class.html#promote,Function pydx.scalar.mpfi.promote()=pydx.scalar.mpfi-module.html#promote,Class Method pydx.scalar.optimize.Interval.promote()=pydx.scalar.optimize.Interval-class.html#promote,Class Method pydx.scalar.symbolic.Float.promote()=pydx.scalar.symbolic.Float-class.html#promote,Class Method pydx.transform.Complex.promote()=pydx.transform.Complex-class.html#promote'); return false;">promote</a></span></span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-61" class="py-name"><a title="pydx.field.TensorField.scalar_zero
+pydx.mjet.MJet.scalar_zero
+pydx.ode.ODE.scalar_zero
+pydx.scalar.symbolic.Float.scalar_zero
+pydx.tensor.Tensor.scalar_zero
+pydx.transform.Complex.scalar_zero" class="py-name" href="#" onclick="doclink('link-61', 'scalar_zero', 'Variable pydx.field.TensorField.scalar_zero=pydx.field.TensorField-class.html#scalar_zero,Variable pydx.mjet.MJet.scalar_zero=pydx.mjet.MJet-class.html#scalar_zero,Variable pydx.ode.ODE.scalar_zero=pydx.ode.ODE-class.html#scalar_zero,Variable pydx.scalar.symbolic.Float.scalar_zero=pydx.scalar.symbolic.Float-class.html#scalar_zero,Variable pydx.tensor.Tensor.scalar_zero=pydx.tensor.Tensor-class.html#scalar_zero,Variable pydx.transform.Complex.scalar_zero=pydx.transform.Complex-class.html#scalar_zero'); return false;">scalar_zero</a></span></span><span class="py-op">)</span> </span>
+<span class="py-lineno">100</span>  <span class="py-line">    <span class="py-keyword">if</span> <span class="py-name">inverse</span> <span class="py-keyword">is</span> <span class="py-name">None</span><span class="py-op">:</span> </span>
+<span class="py-lineno">101</span>  <span class="py-line">      <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">,</span> <span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">d</span> <span class="py-op">=</span> <span class="py-op">-</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">d</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">,</span> <span class="py-name">self</span><span class="py-op">.</span><span class="py-name">c</span><span class="py-op">,</span> <span class="py-op">-</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span> </span>
+<span class="py-lineno">102</span>  <span class="py-line">      <span class="py-name">inverse</span> <span class="py-op">=</span> <span id="link-62" class="py-name"><a title="pydx.transform.MobiusTransform" class="py-name" href="#" onclick="doclink('link-62', 'MobiusTransform', 'Class pydx.transform.MobiusTransform=pydx.transform.MobiusTransform-class.html'); return false;">MobiusTransform</a></span></span><span class="py-op">(</span> <span class="py-name">a</span><span class="py-op">,</span> <span class="py-name">b</span><span class="py-op">,</span> <span class="py-name">c</span><span class="py-op">,</span> <span class="py-name">d</span><span class="py-op">,</span> <span class="py-name">self</span> <span class="py-op">)</span> </span>
+<span class="py-lineno">103</span>  <span class="py-line">    <span id="link-63" class="py-name"><a title="pydx.field.Transform" class="py-name" href="#" onclick="doclink('link-63', 'Transform', 'Class pydx.field.Transform=pydx.field.Transform-class.html'); return false;">Transform</a></span></span><span class="py-op">.</span><span id="link-64" class="py-name"><a title="pydx.field.AdaptedTensorField.__init__
+pydx.field.AddTensorField.__init__
+pydx.field.CommaTensorField.__init__
+pydx.field.ConcreteTensorField.__init__
+pydx.field.ContractTensorField.__init__
+pydx.field.IdentityTransform.__init__
+pydx.field.MulTensorField.__init__
+pydx.field.NegTensorField.__init__
+pydx.field.ScalarField.__init__
+pydx.field.ScalarMulTensorField.__init__
+pydx.field.SubTensorField.__init__
+pydx.field.TensorField.__init__
+pydx.field.Transform.__init__
+pydx.field.TransformTensorField.__init__
+pydx.field.TransposeTensorField.__init__
+pydx.field.ViewTensorField.__init__
+pydx.geodesic.Geodesic.__init__
+pydx.metric.HyperbolicMetric.Inverse.__init__
+pydx.metric.HyperbolicMetric.__init__
+pydx.metric.KerrMetric.Inverse.__init__
+pydx.metric.KerrMetric.__init__
+pydx.metric.RZCurzonMetric.Inverse.__init__
+pydx.metric.RZCurzonMetric.__init__
+pydx.metric.SpatialCurzonMetric.Inverse.__init__
+pydx.metric.SpatialCurzonMetric.__init__
+pydx.metric.SwartzchildMetric.Inverse.__init__
+pydx.metric.SwartzchildMetric.__init__
+pydx.mjet.ACosJet.__init__
+pydx.mjet.ASinJet.__init__
+pydx.mjet.ATanJet.__init__
+pydx.mjet.AddJet.__init__
+pydx.mjet.CosJet.__init__
+pydx.mjet.Derivation.__init__
+pydx.mjet.DivJet.__init__
+pydx.mjet.IntPowJet.__init__
+pydx.mjet.Jet.__init__
+pydx.mjet.JetOp.__init__
+pydx.mjet.MJet.__init__
+pydx.mjet.MulJet.__init__
+pydx.mjet.NegJet.__init__
+pydx.mjet.PromotedJet.__init__
+pydx.mjet.SinJet.__init__
+pydx.mjet.SliceJet.__init__
+pydx.mjet.Spray.__init__
+pydx.mjet.SprayItem.__init__
+pydx.mjet.SubJet.__init__
+pydx.mjet.UnaryJetOp.__init__
+pydx.ode.Info.__init__
+pydx.ode.ODE.__init__
+pydx.scalar.Scalar.__init__
+pydx.scalar.optimize.Binary.__init__
+pydx.scalar.optimize.Interval.__init__
+pydx.scalar.optimize.Multi.__init__
+pydx.scalar.optimize.Unary.__init__
+pydx.scalar.symbolic.ComputationContext.__init__
+pydx.scalar.symbolic.Float.__init__
+pydx.tensor.Tensor.__init__
+pydx.transform.Complex.__init__
+pydx.transform.ComplexTransform.__init__
+pydx.transform.LinearTransform.__init__
+pydx.transform.MobiusTransform.__init__" class="py-name" href="#" onclick="doclink('link-64', '__init__', 'Method pydx.field.AdaptedTensorField.__init__()=pydx.field.AdaptedTensorField-class.html#__init__,Method pydx.field.AddTensorField.__init__()=pydx.field.AddTensorField-class.html#__init__,Method pydx.field.CommaTensorField.__init__()=pydx.field.CommaTensorField-class.html#__init__,Method pydx.field.ConcreteTensorField.__init__()=pydx.field.ConcreteTensorField-class.html#__init__,Method pydx.field.ContractTensorField.__init__()=pydx.field.ContractTensorField-class.html#__init__,Method pydx.field.IdentityTransform.__init__()=pydx.field.IdentityTransform-class.html#__init__,Method pydx.field.MulTensorField.__init__()=pydx.field.MulTensorField-class.html#__init__,Method pydx.field.NegTensorField.__init__()=pydx.field.NegTensorField-class.html#__init__,Method pydx.field.ScalarField.__init__()=pydx.field.ScalarField-class.html#__init__,Method pydx.field.ScalarMulTensorField.__init__()=pydx.field.ScalarMulTensorField-class.html#__init__,Method pydx.field.SubTensorField.__init__()=pydx.field.SubTensorField-class.html#__init__,Method pydx.field.TensorField.__init__()=pydx.field.TensorField-class.html#__init__,Method pydx.field.Transform.__init__()=pydx.field.Transform-class.html#__init__,Method pydx.field.TransformTensorField.__init__()=pydx.field.TransformTensorField-class.html#__init__,Method pydx.field.TransposeTensorField.__init__()=pydx.field.TransposeTensorField-class.html#__init__,Method pydx.field.ViewTensorField.__init__()=pydx.field.ViewTensorField-class.html#__init__,Method pydx.geodesic.Geodesic.__init__()=pydx.geodesic.Geodesic-class.html#__init__,Method pydx.metric.HyperbolicMetric.Inverse.__init__()=pydx.metric.HyperbolicMetric.Inverse-class.html#__init__,Method pydx.metric.HyperbolicMetric.__init__()=pydx.metric.HyperbolicMetric-class.html#__init__,Method pydx.metric.KerrMetric.Inverse.__init__()=pydx.metric.KerrMetric.Inverse-class.html#__init__,Method pydx.metric.KerrMetric.__init__()=pydx.metric.KerrMetric-class.html#__init__,Method pydx.metric.RZCurzonMetric.Inverse.__init__()=pydx.metric.RZCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.RZCurzonMetric.__init__()=pydx.metric.RZCurzonMetric-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.Inverse.__init__()=pydx.metric.SpatialCurzonMetric.Inverse-class.html#__init__,Method pydx.metric.SpatialCurzonMetric.__init__()=pydx.metric.SpatialCurzonMetric-class.html#__init__,Method pydx.metric.SwartzchildMetric.Inverse.__init__()=pydx.metric.SwartzchildMetric.Inverse-class.html#__init__,Method pydx.metric.SwartzchildMetric.__init__()=pydx.metric.SwartzchildMetric-class.html#__init__,Method pydx.mjet.ACosJet.__init__()=pydx.mjet.ACosJet-class.html#__init__,Method pydx.mjet.ASinJet.__init__()=pydx.mjet.ASinJet-class.html#__init__,Method pydx.mjet.ATanJet.__init__()=pydx.mjet.ATanJet-class.html#__init__,Method pydx.mjet.AddJet.__init__()=pydx.mjet.AddJet-class.html#__init__,Method pydx.mjet.CosJet.__init__()=pydx.mjet.CosJet-class.html#__init__,Method pydx.mjet.Derivation.__init__()=pydx.mjet.Derivation-class.html#__init__,Method pydx.mjet.DivJet.__init__()=pydx.mjet.DivJet-class.html#__init__,Method pydx.mjet.IntPowJet.__init__()=pydx.mjet.IntPowJet-class.html#__init__,Method pydx.mjet.Jet.__init__()=pydx.mjet.Jet-class.html#__init__,Method pydx.mjet.JetOp.__init__()=pydx.mjet.JetOp-class.html#__init__,Method pydx.mjet.MJet.__init__()=pydx.mjet.MJet-class.html#__init__,Method pydx.mjet.MulJet.__init__()=pydx.mjet.MulJet-class.html#__init__,Method pydx.mjet.NegJet.__init__()=pydx.mjet.NegJet-class.html#__init__,Method pydx.mjet.PromotedJet.__init__()=pydx.mjet.PromotedJet-class.html#__init__,Method pydx.mjet.SinJet.__init__()=pydx.mjet.SinJet-class.html#__init__,Method pydx.mjet.SliceJet.__init__()=pydx.mjet.SliceJet-class.html#__init__,Method pydx.mjet.Spray.__init__()=pydx.mjet.Spray-class.html#__init__,Method pydx.mjet.SprayItem.__init__()=pydx.mjet.SprayItem-class.html#__init__,Method pydx.mjet.SubJet.__init__()=pydx.mjet.SubJet-class.html#__init__,Method pydx.mjet.UnaryJetOp.__init__()=pydx.mjet.UnaryJetOp-class.html#__init__,Method pydx.ode.Info.__init__()=pydx.ode.Info-class.html#__init__,Method pydx.ode.ODE.__init__()=pydx.ode.ODE-class.html#__init__,Method pydx.scalar.Scalar.__init__()=pydx.scalar.Scalar-class.html#__init__,Method pydx.scalar.optimize.Binary.__init__()=pydx.scalar.optimize.Binary-class.html#__init__,Method pydx.scalar.optimize.Interval.__init__()=pydx.scalar.optimize.Interval-class.html#__init__,Method pydx.scalar.optimize.Multi.__init__()=pydx.scalar.optimize.Multi-class.html#__init__,Method pydx.scalar.optimize.Unary.__init__()=pydx.scalar.optimize.Unary-class.html#__init__,Method pydx.scalar.symbolic.ComputationContext.__init__()=pydx.scalar.symbolic.ComputationContext-class.html#__init__,Method pydx.scalar.symbolic.Float.__init__()=pydx.scalar.symbolic.Float-class.html#__init__,Method pydx.tensor.Tensor.__init__()=pydx.tensor.Tensor-class.html#__init__,Method pydx.transform.Complex.__init__()=pydx.transform.Complex-class.html#__init__,Method pydx.transform.ComplexTransform.__init__()=pydx.transform.ComplexTransform-class.html#__init__,Method pydx.transform.LinearTransform.__init__()=pydx.transform.LinearTransform-class.html#__init__,Method pydx.transform.MobiusTransform.__init__()=pydx.transform.MobiusTransform-class.html#__init__'); return false;">__init__</a></span></span><span class="py-op">(</span> <span class="py-name">self</span><span class="py-op">,</span> <span class="py-op">[</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-65" class="py-name"><a title="pydx.transform.ComplexTransform.call0
+pydx.transform.LinearTransform.call0
+pydx.transform.MobiusTransform.call0" class="py-name" href="#" onclick="doclink('link-65', 'call0', 'Method pydx.transform.ComplexTransform.call0()=pydx.transform.ComplexTransform-class.html#call0,Method pydx.transform.LinearTransform.call0()=pydx.transform.LinearTransform-class.html#call0,Method pydx.transform.MobiusTransform.call0()=pydx.transform.MobiusTransform-class.html#call0'); return false;">call0</a></span></span><span class="py-op">,</span><span class="py-name">self</span><span class="py-op">.</span><span id="link-66" class="py-name"><a title="pydx.transform.ComplexTransform.call1
+pydx.transform.LinearTransform.call1
+pydx.transform.MobiusTransform.call1" class="py-name" href="#" onclick="doclink('link-66', 'call1', 'Method pydx.transform.ComplexTransform.call1()=pydx.transform.ComplexTransform-class.html#call1,Method pydx.transform.LinearTransform.call1()=pydx.transform.LinearTransform-class.html#call1,Method pydx.transform.MobiusTransform.call1()=pydx.transform.MobiusTransform-class.html#call1'); return false;">call1</a></span></span><span class="py-op">]</span><span class="py-op">,</span> <span class="py-name">inverse</span> <span class="py-op">)</span> </span>
+</div><a name="MobiusTransform.call0"></a><div id="MobiusTransform.call0-def"><span class="py-lineno">104</span> <a class="py-toggle" href="#" id="MobiusTransform.call0-toggle" onclick="toggle('MobiusTransform.call0'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.MobiusTransform-class.html#call0">call0</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">z0</span><span class="py-op">,</span> <span class="py-param">z1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="MobiusTransform.call0-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="MobiusTransform.call0-expanded"><span class="py-lineno">105</span>  <span class="py-line">    <span class="py-name">z</span> <span class="py-op">=</span> <span id="link-67" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-67', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-name">z0</span><span class="py-op">,</span><span class="py-name">z1</span><span class="py-op">)</span> </span>
+<span class="py-lineno">106</span>  <span class="py-line">    <span class="py-name">w</span> <span class="py-op">=</span> <span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">)</span><span class="py-op">/</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">c</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">d</span><span class="py-op">)</span> </span>
+<span class="py-lineno">107</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">w</span><span class="py-op">[</span><span class="py-number">0</span><span class="py-op">]</span> </span>
+</div><a name="MobiusTransform.call1"></a><div id="MobiusTransform.call1-def"><span class="py-lineno">108</span> <a class="py-toggle" href="#" id="MobiusTransform.call1-toggle" onclick="toggle('MobiusTransform.call1'); return false;">-</a><span class="py-line">  <span class="py-keyword">def</span> <a class="py-def-name" href="pydx.transform.MobiusTransform-class.html#call1">call1</a><span class="py-op">(</span> <span class="py-param">self</span><span class="py-op">,</span> <span class="py-param">z0</span><span class="py-op">,</span> <span class="py-param">z1</span> <span class="py-op">)</span><span class="py-op">:</span> </span>
+</div><div id="MobiusTransform.call1-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="MobiusTransform.call1-expanded"><span class="py-lineno">109</span>  <span class="py-line">    <span class="py-name">z</span> <span class="py-op">=</span> <span id="link-68" class="py-name"><a title="pydx.transform.Complex" class="py-name" href="#" onclick="doclink('link-68', 'Complex', 'Class pydx.transform.Complex=pydx.transform.Complex-class.html'); return false;">Complex</a></span></span><span class="py-op">(</span><span class="py-name">z0</span><span class="py-op">,</span><span class="py-name">z1</span><span class="py-op">)</span> </span>
+<span class="py-lineno">110</span>  <span class="py-line">    <span class="py-name">w</span> <span class="py-op">=</span> <span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">a</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">b</span><span class="py-op">)</span><span class="py-op">/</span><span class="py-op">(</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">c</span><span class="py-op">*</span><span class="py-name">z</span><span class="py-op">+</span><span class="py-name">self</span><span class="py-op">.</span><span class="py-name">d</span><span class="py-op">)</span> </span>
+<span class="py-lineno">111</span>  <span class="py-line">    <span class="py-keyword">return</span> <span class="py-name">w</span><span class="py-op">[</span><span class="py-number">1</span><span class="py-op">]</span> </span>
+</div></div><span class="py-lineno">112</span>  <span class="py-line"> </span><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >pydx</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">Generated by Epydoc
+        3.0alpha3 on Sat Oct 14 10:29:56 2006</td>
+    <td align="right" class="footer">
+      <a href="http://epydoc.sourceforge.net">http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie()
+  // -->
+</script>
+  
+</body>
+</html>
